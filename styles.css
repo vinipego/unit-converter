@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px dotted green; */
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  background-color: #ccc;
+}
+#wrapper {
+  margin: 10px auto;
+  width: 400px;
+  padding: 10px;
+  background-color: #555400;
+  color: #fffeaa;
+  border: 4px solid #fffeaa;
+  outline: 2px solid #555400;
+  border-radius: 20px;
+}
+
+#hero-title {
+  margin: 20px 0 20px 10px;
+  font-size: 32px;
+}
+#hero-title:hover {
+  cursor: pointer;
+}
+/* Menu: Length - Temperature - Weight */
+#unit-category-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+/* Menu Items */
+#unit-category-menu li {
+  font-size: 16px;
+  padding: 5px 10px;
+  color: #555400;
+  background-color: #fffeaa;
+}
+#unit-category-menu li:hover {
+  cursor: pointer;
+  background-color: #d8d794;
+}
+#unit-category-menu li:active {
+  transform: scale(0.95);
+}
+
+/* Menu item when selected */
+#unit-category-menu .menuon {
+  color: #fffeaa;
+  background-color: #807f15;
+  border-bottom: 1px solid #807f15;
+  border-top: 1px solid #fffeaa;
+  border-right: 1px solid #fffeaa;
+  border-left: 1px solid #fffeaa;
+  /* margin bottom overlaps and goes over the margin top of the bigger wrapper */
+  margin-bottom: -1px;
+}
+/* keeps the selected menu from changing colors upon hover */
+#unit-category-menu .menuon:hover {
+  background-color: #807f15;
+}
+/* keeps selected menu from changing scale upon active */
+#unit-category-menu .menuon:active {
+  transform: scale(1);
+}
+
+/* wrapper of inside contents */
+#form-wrapper {
+  padding: 10px;
+  background-color: #807f15;
+  border: 1px solid #fffeaa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* div box for BOTH input/output (From/To) */
+.in-out-put-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+/* div box for EACH input/output (From/To) */
+.in-out-put {
+  display: flex;
+  flex-direction: column;
+}
+
+#unit-form-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#unit-input {
+  border: none;
+}
+
+.unit-display {
+  /* number in to (output) seems to need flexbox while the input doesn't */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* input managed just fine with text-align */
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 2px 8px;
+  width: 100px;
+  height: 30px;
+  background-color: #fffeaa;
+  color: #807f15;
+  /* border: 1px solid black; */
+}
+#unit-output {
+  /* background-color: #dfddb4; */
+  /* box-shadow: inset 0 0 3px black; */
+}
+
+select {
+  padding: 10px;
+  color: #555400;
+  width: 150px;
+  background-color: #fffeaa;
+}
+
+/* make scroll bar hidden but scrollable */
+select::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+select::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+select option {
+  padding: 4px 8px;
+  margin-bottom: 5px;
+  &:hover,
+  &:checked {
+    color: #fffeaa;
+    background-color: #555400;
+  }
+}
+
+.converters-wrapper {
+  min-height: 225px;
+}

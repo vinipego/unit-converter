@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 id="hero-title">Unit Converter</h1>
+      <ul id="unit-category-menu">
+        <li id="list-length" class="menuon">Length</li>
+        <li id="list-temperature">Temperature</li>
+        <li id="list-weight">Weight</li>
+      </ul>
+      <div id="form-wrapper">
+        <div class="in-out-put-wrapper">
+          <div class="in-out-put">
+            <label for="unit-input">From:</label>
+            <input
+              id="unit-input"
+              type="text"
+              class="unit-display"
+              placeholder="00"
+            />
+          </div>
+          <div class="in-out-put">
+            <label for="unit-output">To:</label>
+            <output id="unit-output" class="unit-display"></output>
+          </div>
+
+          <!-- end of in-out-put -->
+        </div>
+        <div id="unit-form-section">
+          <!-- check javascript in case of error. value be capitalized could become an issue -->
+          <select
+            name="Units"
+            id="from-unit"
+            size="7"
+            class="converters-wrapper"
+          ></select>
+          <select
+            name="Units"
+            id="to-unit"
+            size="10"
+            class="converters-wrapper"
+          ></select>
+        </div>
+
+        <!-- end of form-wrapper -->
+      </div>
+      <!-- end of wrapper -->
+    </div>
+
+    <!-- test btn. Delete when finished -->
+    <button id="test-button">test</button>
+    <script src="scritps.js"></script>
+  </body>
+</html>
