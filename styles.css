@@ -81,18 +81,21 @@ body {
 .in-out-put-wrapper {
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
 }
 /* div box for EACH input/output (From/To) */
 .in-out-put {
   display: flex;
   flex-direction: column;
+  
 }
 
 #unit-form-section {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
+  
 }
 
 #unit-input {
@@ -104,20 +107,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
   /* input managed just fine with text-align */
   text-align: center;
-  font-family: inherit;
   font-size: 16px;
   padding: 2px 8px;
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: #fffeaa;
   color: #807f15;
+  /* border affects input but not output, idk why */
   /* border: 1px solid black; */
-}
-#unit-output {
-  /* background-color: #dfddb4; */
-  /* box-shadow: inset 0 0 3px black; */
 }
 
 select {
