@@ -1,5 +1,3 @@
-//test button
-const testBtn = document.querySelector("#test-button");
 const heroTitle = document.querySelector("#hero-title");
 const unitInput = document.querySelector("#unit-input");
 const unitOutput = document.querySelector("#unit-output");
