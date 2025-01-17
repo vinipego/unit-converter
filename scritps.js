@@ -18,12 +18,6 @@ const weightConverter = ["Kilogram", "Gram", "Ton", "Pound", "Ounce"];
 const fromUnit = document.querySelector("#from-unit");
 const toUnit = document.querySelector("#to-unit");
 
-//test buttom
-testBtn.addEventListener("click", () => {
-  console.log(unitInput.value);
-  unitOutput.textContent = "Test";
-});
-
 heroTitle.addEventListener("click", () => {
   location.reload();
 });
